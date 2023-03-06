@@ -10,6 +10,9 @@ app.get('/', (req, res) =>{
   res.send('funcionando')
 })
 
+const rotas = require('./rotas')
+app.use('/api', rotas)
+
 
 const port = 3001
 
